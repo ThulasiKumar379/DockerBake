@@ -1,17 +1,17 @@
 services: 
   frontend:
     build:
-      context: ./Thulasi_web
+      context: ./application/Thulasi_web
       dockerfile: Dockerfile
     image: thulasikumar073/crb_web:latest
   backend:
     build:
-      context: ./Thulasi_backend
+      context: ./application/Thulasi_backend
       dockerfile: Dockerfile
     image: thulasikumar073/crb_backend:thulasi
   database:
     build:
-      context: ./database
+      context: ./application/database
       dockerfile: Dockerfile
     image: thulasikumar073/crb_database:thulasi
 
