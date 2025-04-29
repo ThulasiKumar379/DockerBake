@@ -1,0 +1,17 @@
+services: 
+  frontend:
+    build:
+      context: ./crb_web
+      dockerfile: Dockerfile
+    image: thulasikumar073/crb_web:latest
+  backend:
+    build:
+      context: ./crb_backend
+      dockerfile: Dockerfile
+    image: thulasikumar073/crb_backend:thulasi
+  database:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    image: thulasikumar073/crb_database:thulasi
+
